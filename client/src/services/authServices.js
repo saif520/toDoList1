@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const SERVER_URL='http://localhost:5800/api';
+const SERVER_URL='https://todolist1-6zie.onrender.com/api';
 
 const registerUser=(data)=>{
     return axios.post(SERVER_URL+'/register',data);
