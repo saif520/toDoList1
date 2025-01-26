@@ -22,6 +22,10 @@ mongoose.connect(process.env.DB_URL).then((result)=>{
     console.log(err);
 })
 
+app.get('/',(req,res)=>{
+    res.send('Hello World');
+})
+
 app.listen(PORT,()=>{
     console.log(`Server started at http://localhost:${PORT}`)
 })
