@@ -41,7 +41,7 @@ async function loginUser(req,res) {
             lastName:user?.lastName,
             token
         }
-        res.send(finalData);
+        res.status(200).send(finalData);
     }catch(err){
         console.log(err);
         res.status(400).send(err);
